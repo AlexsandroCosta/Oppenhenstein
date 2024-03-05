@@ -3,5 +3,138 @@
 {% block 'titulo' %}Inicio{% endblock %}
 
 {% block 'conteudo' %}
-  <h1>Olá mundo</h1>
+  <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+    <a class="navbar-brand" href="#">Oppenhenstein</a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#teorias">Teorias</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#questoes">Questões</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#curiosidades">Curiosidades</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+      <h4 id="teorias">Teorias</h4>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#teoria1" aria-expanded="false" aria-controls="flush-collapseOne">
+              Teoria 1
+            </button>
+          </h2>
+          <div id="teoria1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Aqui fica todo o conteudo</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#teoria2" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Teoria 2
+            </button>
+          </h2>
+          <div id="teoria2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Aqui fica todo o conteudo</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#teoria3" aria-expanded="false" aria-controls="flush-collapseThree">
+              Teoria 3
+            </button>
+          </h2>
+          <div id="teoria3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Aqui fica todo o conteudo</div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <h4 id="questoes">Questões</h4>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questao1" aria-expanded="false" aria-controls="flush-collapseOne">
+              Questão 1
+            </button>
+          </h2>
+          <div id="questao1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Aqui fica o enunciado da questão</p>
+              <div class="ratio ratio-16x9">
+                <iframe width="609" height="341" src="https://www.youtube.com/embed/6TnGY0XICqs" title="O MACACO VAI CAIR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questao2" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Questão 2
+            </button>
+          </h2>
+          <div id="questao2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Aqui fica o enunciado da questão</p>
+              <div class="ratio ratio-16x9">
+                <iframe width="722" height="406" src="https://www.youtube.com/embed/Fw90Bk_a6aY" title="Sopa de Macaco / Trap" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questao3" aria-expanded="false" aria-controls="flush-collapseThree">
+              Questão 3
+            </button>
+          </h2>
+          <div id="questao3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Aqui fica o enunciado da questão</p>
+              <div class="ratio ratio-16x9">
+                <iframe width="516" height="387" src="https://www.youtube.com/embed/0r9Ck_IeWgk" title="O HOMEM MACACO QUE NAO TEM ALMA E NEM CORACAO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <h4 id="curiosidades">Curiosidades</h4>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c1" aria-expanded="false" aria-controls="flush-collapseOne">
+              Curiosidade 1
+            </button>
+          </h2>
+          <div id="c1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Aqui fica todo o conteudo</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Curiosidade 2
+            </button>
+          </h2>
+          <div id="c2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Aqui fica todo o conteudo</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c3" aria-expanded="false" aria-controls="flush-collapseThree">
+              Curiosidade 3
+            </button>
+          </h2>
+          <div id="c3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Aqui fica todo o conteudo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}
