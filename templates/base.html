@@ -11,7 +11,13 @@
     <title>{% block 'titulo' %}{% endblock %}</title>
   </head>
   <body>
-    {% block 'conteudo' %}{% endblock %}
+    <nav class="navbar navbar-dark bg-dark">
+      <span class="navbar-brand mb-0 h1">Oppenhenstein</span>
+    </nav>
+    <div class="container">
+          {% block 'conteudo' %}{% endblock %}
+    </div>
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
