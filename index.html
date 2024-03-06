@@ -11,7 +11,7 @@
     <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
         <div>
             <span class="navbar-brand mb-0 h1">Oppenhenstein</span>
-            <img src="imagens/gato.gif" alt="Tem um gato aqui">
+            <img id="gato" src="imagens/gato.gif" alt="Tem um gato aqui">
         </div>
         <!--<ul class="nav nav-pills">
             <li class="nav-item">
@@ -42,9 +42,13 @@
                 <div id="teoria1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                     <div class="pdf-container">
-                    <object data="pdf/AnaliseCombinatoria.pdf" type="application/pdf">
-                        <p>Seu navegador não tem plugin para PDF. Você pode <a href="{% static 'pdf/AnaliseCombinatoria.pdf' %}">baixar o PDF</a> e visualizá-lo em um visualizador de PDF offline.</p>
-                    </object>
+                        <object data="pdf/AnaliseCombinatoria.pdf" type="application/pdf">
+                            <p>Seu navegador não tem plugin para PDF. Você pode <a href="{% static 'pdf/AnaliseCombinatoria.pdf' %}">baixar o PDF</a> e visualizá-lo em um visualizador de PDF offline.</p>
+                        </object>
+                    </div>
+
+                    <div class="bazinga">
+                        <img src="imagens/bazinga.png" alt="" height="50px" width="50px">
                     </div>
                 </div>
                 </div>
