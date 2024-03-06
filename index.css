@@ -13,9 +13,18 @@ body{
     color: white;
 }
 
-img{
+#gato{
     width: 30px;
     height: 30px;
+}
+
+img{
+    height: 5%;
+    width: 10%;
+}
+
+.bazinga{
+    text-align: center;
 }
 
 footer{
