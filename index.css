@@ -1,5 +1,5 @@
 body{
-    background-image: url('../imagens/background.jpg');
+    background-image: url('imagens/background.jpg');
     font-family: sans-serif;
 }
 
@@ -33,5 +33,5 @@ footer{
 
 .pdf-container object {
     width: 100%; /* Define a largura do objeto PDF como 100% do seu container */
-    height: 800px; /* Define a altura do objeto PDF como 100% do seu container */
+    height: 700px; /* Define a altura do objeto PDF como 100% do seu container */
 }
