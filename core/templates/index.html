@@ -1,11 +1,14 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block 'titulo' %}Inicio{% endblock %}
 
 {% block 'conteudo' %}
   <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-    <a class="navbar-brand" href="#">Oppenhenstein</a>
-    <ul class="nav nav-pills">
+    <div>
+      <span class="navbar-brand mb-0 h1">Oppenhenstein</span>
+      <img src="{% static 'imagens/gato.gif'%}" alt="Tem um gato aqui">
+    </div>
+    <!--<ul class="nav nav-pills">
       <li class="nav-item">
         <a class="nav-link" href="#teorias">Teorias</a>
       </li>
@@ -15,20 +18,30 @@
       <li class="nav-item">
         <a class="nav-link" href="#curiosidades">Curiosidades</a>
       </li>
-    </ul>
+    </ul>>-->
   </nav>
   <div class="container">
+    <div class="titulo">
+      <h1>Combinatoria</h1>
+    </div>
+    <br>
     <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-      <h4 id="teorias">Teorias</h4>
+      <h2 id="teorias">Teorias</h2>
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#teoria1" aria-expanded="false" aria-controls="flush-collapseOne">
-              Teoria 1
+              4.1 Permutação
             </button>
           </h2>
           <div id="teoria1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Aqui fica todo o conteudo</div>
+            <div class="accordion-body">
+              <div class="pdf-container">
+                <object data="{% static 'pdf/AnaliseCombinatoria.pdf' %}" type="application/pdf">
+                    <p>Seu navegador não tem plugin para PDF. Você pode <a href="{% static 'pdf/AnaliseCombinatoria.pdf' %}">baixar o PDF</a> e visualizá-lo em um visualizador de PDF offline.</p>
+                </object>
+              </div>
+            </div>
           </div>
         </div>
         <div class="accordion-item">
@@ -52,8 +65,10 @@
           </div>
         </div>
       </div>
-      <br>
-      <h4 id="questoes">Questões</h4>
+    </div>
+    <br>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+      <h2 id="questoes">Questões</h2>
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
@@ -101,8 +116,10 @@
           </div>
         </div>
       </div>
-      <br>
-      <h4 id="curiosidades">Curiosidades</h4>
+    </div>
+    <br>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+      <h2 id="curiosidades">Curiosidades</h2>
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
