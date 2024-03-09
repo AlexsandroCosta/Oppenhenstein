@@ -43,7 +43,7 @@
                 <div class="accordion-body">
                     <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
                         <p>
-                            O Princípio fundamental da contagem(P.F.C), é a ideia de que o número de possibilidades de fazer <strong>X</strong> ações distintas e independentes, <u>é a multiplicação</u> da quantidade de modos possíveis que cada uma pode ser feita. 
+                            O Princípio fundamental da contagem (P.F.C), é a ideia de que o número de possibilidades de fazer <strong>X</strong> ações distintas e independentes, <u>é a multiplicação</u> da quantidade de modos possíveis que cada uma pode ser feita. 
                             Ou seja, se uma decisão pode ser tomada de <strong>N</strong> maneiras e outra decisão pode ser tomada de <strong>M</strong> maneiras, o número de maneiras que essas decisões podem ser tomadas simultaneamente é calculado pelo produto de <strong>N</strong> · <strong>M</strong>.
                         </p>
                         <hr>
@@ -76,12 +76,121 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#teoria2" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Teoria 2
+                    4.2 Permutações e combinações
                 </button>
                 </h2>
                 <div id="teoria2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
-                    Aqui fica todo o conteudo
+                    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+                        <p>Há alguns problemas de Combinatória que, embora sejam aplicações do princípio básico, aparecem com muita frequência. Para esses problemas, vale a pena saber de cor as suas respostas.<br><br>O primeiro desses problemas é o:</p>
+                        <p style="text-align: center;"><em>Problema das permutações simples</em></p>
+                        <p><strong>De quantos modos podemos ordenar em fila N objetos distintos?</strong><br></p>
+                        <p style="margin-left: 20px;">
+                            A escolha do objeto que ocupará o primeiro lugar pode ser feita de N modos; a escolha do objeto que ocupará o segundo lugar pode ser feita de N - 1 modos, e o terceiro N-2, e etc.<br><br>
+                            Portanto, o número de permutações simples de N objetos distintos, ou seja, o número de ordens em que podemos colocar N objetos distintos é P = n!.
+                        </p>
+                        <hr>
+                        <p><strong>Exemplo 1</strong>: De quantos modos podemos arrumar em fila 5 livros diferentes de Matemática, 3 livros diferentes de Estatística e 2 livros diferentes de Física, de modo que livros de uma mesma matéria permaneçam juntos?</p>
+                        <p><strong>Solução</strong>: Podemos escolher a ordem das matérias de 3! modos. Feito isso, há 5! modos de colocar os livros de Matemática nos lugares que lhe foram destinados, 3! modos para os de Estatística e 2! modos para os de Física.</p>
+                        <p style="text-align: center;">A resposta é   3! · 5! · 3! · 2!  =  6 · 120 · 6 · 2 = 8640.</p>
+                        <hr>
+                        <p>O segundo problema importante é o: </p>
+                        <p style="text-align: center;"><em>Problema das combinações simples</em></p>
+                        <p><strong>De quantos modos podemos selecionar p objetos distintos entre n objetos distintos dados?</strong></p>
+                        <p style="margin-left: 20px;">Cada seleção de P objetos é chamada de uma combinação simples de classe P dos N objetos, assim, por exemplo, as combinações simples de classe 3 dos objetos a, b, c, d, e são {a, b, c}, {a, b, d}, etc…</p>
+                        <p style="margin-left: 20px;">Representando assim por <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msubsup>
+                                <mi>C</mi>
+                                <mrow>
+                                    <mi>n</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>p</mi>
+                                </mrow>
+                            </msubsup> 
+                            </math> ou <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mo>( </mo>
+                                <msubsup>
+                                    <mi></mi>
+                                    <mrow>
+                                        <mi>p</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>n</mi>
+                                    </mrow>
+                                </msubsup>
+                                <mo>)</mo>
+                            </math>, deixando assim <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msubsup>
+                                    <mi>C</mi>
+                                    <mrow>
+                                        <mi>5</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>3</mi>
+                                    </mrow>
+                                </msubsup> 
+                            </math> =  <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mo>( </mo>
+                                <msubsup>
+                                    <mi></mi>
+                                    <mrow>
+                                        <mi>3</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>5</mi>
+                                    </mrow>
+                                </msubsup>
+                                <mo>)</mo>
+                            </math>. Agora basta apenas aplicar a equação para combinações desse tipo:
+                        </p>
+                        <p style="text-align: center;">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msubsup>
+                                    <mi>C</mi>
+                                    <mrow>
+                                        <mi>n</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>p</mi>
+                                    </mrow>
+                                </msubsup> 
+                            </math> = <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mfrac>
+                                    <mn>n!</mn>
+                                    <mn>p!(n-p)!</mn>
+                                </mfrac>
+                            </math>
+                        </p>
+                        <hr>
+                        <p><strong>Exemplo 2</strong>: Com 5 homens e 4 mulheres, quantas comissões de 5 pessoas, com exatamente 3 homens, podem ser formadas?</p>
+                        <p><strong>Solução</strong>: Para formar a comissão devemos escolher 3 dos homens e 2 das mulheres. Há <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msubsup>
+                                    <mi>C</mi>
+                                    <mrow>
+                                        <mi>5</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>3</mi>
+                                    </mrow>
+                                </msubsup> 
+                            </math> · <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msubsup>
+                                    <mi>C</mi>
+                                    <mrow>
+                                        <mi>4</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>2</mi>
+                                    </mrow>
+                                </msubsup> 
+                            </math> = 10 · 6 = 60 comissões.
+                        </p>
+                        <hr>
+                        <p style="margin-left: 20px;">Respectivamente o primeiro problema funcionará melhor em problemas que envolvem uma ordem exata, ou <u>problemas ordenados</u>. Para problemas que não exigem ordenação, <u>problemas não ordenados</u>, o conceito do segundo problema exibido exerce melhor utilidade.</p>
+                        <p style="margin-left: 20px;">Em problemas mais complexos vale levar em conta que se tivermos duas ou mais decisões (e) considera-se multiplicação, já se tivermos que escolher uma ou outra (ou) considera-se a soma.</p>
+                    </div>
+
                     <div class="sheldon">
                         <img src="imagens/sheldon.png" alt="" height="50px" width="50px">
                     </div>

@@ -53,3 +53,17 @@ footer{
     width: 100%; /* Define a largura do objeto PDF como 100% do seu container */
     height: 700px; /* Define a altura do objeto PDF como 100% do seu container */
 }
+
+.superscript {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+.subscript {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+math{
+    font-size: 23px;
+}
